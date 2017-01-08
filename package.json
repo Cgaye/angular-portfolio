@@ -2,12 +2,9 @@
   "name": "Curtis Gaye's Portfolio Page",
   "version": "0.0.0",
   "description": "Portfolio Page",
-     "engines": {
-    "node": "4.4.5"
-  },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "server.js"
   },
   "repository": "",
   "author": "Curtis Gaye",
