@@ -1,10 +1,10 @@
 {
-  "name": "Curtis Gaye's Portfolio Page",
+  "name": "Curtis_portfolio_page",
   "version": "0.0.0",
-  "description": "Portfolio Page",
+  "description": "portfolio",
   "main": "server.js",
   "scripts": {
-    "start": "server.js"
+    "start": "node server.js"
   },
   "repository": "",
   "author": "Curtis Gaye",
