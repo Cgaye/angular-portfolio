@@ -1,0 +1,89 @@
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='span12'>
+      <div class='col-xs-6'>
+        <div class='compone3'>
+          <div class='span2'>
+            <a class = 'invis home'>Home </a> &nbsp; &nbsp;
+            <a class = 'invis aboutMe'>About Me</a> &nbsp; &nbsp;
+            <a class = 'invis projects'>Projects</a> &nbsp; &nbsp;
+            <a class = 'invis contactMe'>Contact Me</a>&nbsp; &nbsp;
+          </div>
+
+          <div class='info'>
+
+            <h1 class = 'invis'>About Me</h1>
+            <div class='bar3'> </div>
+            <h4 class = 'invis'>Welcome and feel free to ask more!</h4>
+          </div>
+          <p class='openpar3 invis' > I have a bachelor’s degree in Mathematics, which has greatly improved my analytical and problem solving skills. Toward the end of my studies I fell in love with coding and have been studying various languages ever since. <br/>
+            
+            Libraries Languages and Frameworks include: <br/> <br/>
+          Javascript, CSS, HTML, NodeJS, Express, Handlebars, AngularJS, ReactJS, jQuery, SocketIO, Bootstrap, and MongoDB. <br/> <br/>
+            I am also familiar with using REST APIs, Agile design principles and UI/UX design principles. 
+        
+        I use Codepen for my frontend development, and Cloud9 for backend development and storage. I also use git for version control.
+          </p>
+        </div>
+      </div>
+      <div class='col-xs-6'>
+        <div class='comptwo'>
+
+     
+ <video  playsinline autoplay muted loop>
+       <source src='https://dl.dropboxusercontent.com/s/sq4edfcjil8m0gk/Cave.mp4?dl=0' type="video/mp4">
+     </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<img class='htmllogo3' src='https://dl.dropboxusercontent.com/s/grjdzys4h4ehit7/Angular%20Image.png?dl=0'>
+
+<script>
+    
+
+var tl = new /*global TimelineMax*/TimelineMax();
+
+  
+tl.from(".compone3", 1 , {width: '100%'})
+  .to( '.home', 0.1 , {opacity: 1})
+  .to( '.projects', 0.1 , {opacity: 1})
+  .to( '.aboutMe', 0.1 , {opacity: 1})
+  .to( '.contactMe', 0.1 , {opacity: 1})
+  .staggerTo( '.span2', .01 , {opacity:1}, .1)
+  .staggerFrom( '.info', 0.5, {opacity:0, scale: 0.6, ease: /*global Back*/Back.easeout},.1)
+  .staggerFrom('.htmllogo3', 0.1 , {opacity: 0})
+  .staggerFrom('.htmllogo3', 1, {scale: .50})
+  .staggerFrom( '.openpar3', .5, {opacity:0}, .1);
+
+    /*global $*/$('.projects').click(function(){
+        tl.to('.span2', .01, {opacity:0})
+          .to('.info', 0, {opacity:0})
+          .to('.openpar3', 0, {opacity:0})
+          .to('.compone3', 1 , {width: '100%'});
+      setTimeout(function(){
+          $(/*global location*/location).attr('href', '#projects');
+      }, 1000);
+        });
+  
+      $('.home').click(function(){
+        tl.to('.span2', .01, {opacity:0})
+          .to('.info', 0, {opacity:0})
+          .to('.openpar3', 0, {opacity:0})
+          .to('.compone3', 1 , {width: '100%'});
+      setTimeout(function(){
+          $(/*global location*/location).attr('href', '#/');
+      }, 1000);
+        });
+        
+              $('.contactMe').click(function(){
+        tl.to('.span2', .01, {opacity:0})
+          .to('.info', 0, {opacity:0})
+          .to('.openpar3', 0, {opacity:0})
+          .to('.compone3', 1 , {width: '100%'});
+      setTimeout(function(){
+          $(/*global location*/location).attr('href', '#contactMe');
+      }, 1000);
+        });
+</script>
