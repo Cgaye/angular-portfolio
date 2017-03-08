@@ -10,7 +10,7 @@
             <a class = 'invis contactMe'>Contact Me</a>&nbsp; &nbsp;
           </div>
 
-          <div class='info'>
+          <div class='info2'>
 
             <h1 class = 'invis'>About Me</h1>
             <div class='bar3'> </div>
@@ -19,8 +19,8 @@
           <p class='openpar3 invis' > I have a bachelor’s degree in Mathematics, which has greatly improved my analytical and problem solving skills. Toward the end of my studies I fell in love with coding and have been studying various languages ever since. <br/>
             
             Libraries Languages and Frameworks include: <br/> <br/>
-          Javascript, CSS, HTML, NodeJS, Express, Handlebars, AngularJS, ReactJS, jQuery, SocketIO, Bootstrap, Greensock for animation, SQL and MongoDB. <br/> <br/>
-            I am also familiar with using REST APIs, Agile design principles and UI/UX design principles. 
+          Javascript, CSS, HTML, NodeJS, Express, Handlebars, Java, Python, AngularJS, ReactJS, jQuery, SocketIO, Bootstrap, Greensock for animation, SQL and MongoDB. <br/> <br/>
+            I am also familiar with using REST APIs, Agile design principles and UI/UX design principles. I use SAS (not SAAS) and R for statistical purposes.
         
         I use Codepen for my frontend development, and Cloud9 for backend development and storage. I also use git for version control.
           </p>
@@ -52,14 +52,14 @@ tl.from(".compone3", 1 , {width: '100%'})
   .to( '.aboutMe', 0.1 , {opacity: 1})
   .to( '.contactMe', 0.1 , {opacity: 1})
   .staggerTo( '.span2', .01 , {opacity:1}, .1)
-  .staggerFrom( '.info', 0.5, {opacity:0, scale: 0.6, ease: /*global Back*/Back.easeout},.1)
+  .staggerFrom( '.info2', 0.5, {opacity:0, scale: 0.6, ease: /*global Back*/Back.easeout},.1)
   .staggerFrom('.htmllogo3', 0.1 , {opacity: 0})
   .staggerFrom('.htmllogo3', 1, {scale: .50})
   .staggerFrom( '.openpar3', .5, {opacity:0}, .1);
 
     /*global $*/$('.projects').click(function(){
         tl.to('.span2', .01, {opacity:0})
-          .to('.info', 0, {opacity:0})
+          .to('.info2', 0, {opacity:0})
           .to('.openpar3', 0, {opacity:0})
           .to('.compone3', 1 , {width: '100%'});
       setTimeout(function(){
@@ -69,7 +69,7 @@ tl.from(".compone3", 1 , {width: '100%'})
   
       $('.home').click(function(){
         tl.to('.span2', .01, {opacity:0})
-          .to('.info', 0, {opacity:0})
+          .to('.info2', 0, {opacity:0})
           .to('.openpar3', 0, {opacity:0})
           .to('.compone3', 1 , {width: '100%'});
       setTimeout(function(){
@@ -79,7 +79,7 @@ tl.from(".compone3", 1 , {width: '100%'})
         
               $('.contactMe').click(function(){
         tl.to('.span2', .01, {opacity:0})
-          .to('.info', 0, {opacity:0})
+          .to('.info2', 0, {opacity:0})
           .to('.openpar3', 0, {opacity:0})
           .to('.compone3', 1 , {width: '100%'});
       setTimeout(function(){
